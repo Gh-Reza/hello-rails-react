@@ -10,7 +10,11 @@ const Greeting = () => {
     dispatch(getGreetings());
   }, [dispatch]);
 
-  return <h1>{greeting}</h1>;
+  return (
+    <div className='container'>
+      <h1>{greeting}</h1>
+    </div>
+  )
 }
 
 export default Greeting;
